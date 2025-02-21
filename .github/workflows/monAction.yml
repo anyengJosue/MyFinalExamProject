@@ -1,0 +1,13 @@
+name: monAction
+
+on: 
+  pull_request:
+    branches:
+      - main  
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display message
+        run: echo "Vous venez d'ouvrir le pull request !"
